@@ -11,11 +11,9 @@ Toutes les versions sont dans **[Releases](https://github.com/PataphiX-creator/a
 - **Téléphone (Android 7 ou plus)** : télécharge `Academie_Art.apk` et ouvre-le pour l'installer.
   Quand une nouvelle version sort, l'écran titre propose de la télécharger (ta sauvegarde est gardée).
 
-Les autres fichiers d'une version (`c-…`, `manifest.json`, `manifest.sig`) servent aux mises à jour
-automatiques : pas besoin de les télécharger.
-
 ## Mises à jour automatiques (PC)
 
-Au lancement, le jeu lit le manifeste de la dernière version publiée ici. Le manifeste est signé :
-le jeu refuse toute version qui n'a pas été signée par PataphiX. Seuls les fichiers qui ont changé
-sont téléchargés. Sans internet, le jeu se lance avec la version déjà installée.
+Le dossier [`maj/`](maj) contient les fichiers de la dernière version du jeu et son manifeste.
+Au lancement, le jeu lit ce manifeste, vérifie sa signature (le jeu refuse toute version qui n'a pas
+été signée par PataphiX) et télécharge seulement les fichiers qui ont changé. Sans internet, le jeu
+se lance avec la version déjà installée.
